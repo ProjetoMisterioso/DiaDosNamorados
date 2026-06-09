@@ -1,241 +1,482 @@
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♥</text></svg>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1 Ano com Alice</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  </head>
-  <body>
-    <div id="hearts-bg" aria-hidden="true"></div>
-
-    <section class="hero" id="hero">
-      <div class="hero-glow"></div>
-      <div class="hero-content">
-        <p class="hero-pre">Para</p>
-        <h1 class="hero-title">
-          <span class="title-number">Alice</span>
-          <span class="title-text">o</span>
-        </h1>
-        <p class="hero-with">meu</p>
-        <h2 class="hero-name">Amor</h2>
-        <div class="hero-heart" id="hero-heart">
-          <svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M256 448l-30.2-27.6C97.9 306.7 32 249.4 32 176 32 114.6 80.6 64 140 64c33.5 0 65.9 15.5 86 39.9L256 128l30-24.1C306 79.5 338.5 64 372 64c59.4 0 108 50.6 108 112 0 73.4-65.9 130.7-193.8 244.4L256 448z" fill="currentColor"/>
-          </svg>
-        </div>
-        <p class="hero-date">desde 21 de maio de 2025</p>
-      </div>
-      <div class="scroll-indicator" id="scroll-indicator">
-        <span>Nossa história</span>
-        <div class="scroll-line"></div>
-      </div>
-    </section>
-
-    <section class="section story-intro" id="story-intro">
-      <div class="container">
-        <div class="intro-text">
-          <p class="intro-line" data-anim="fade">Há aproximadamente um ano,</p>
-          <p class="intro-line" data-anim="fade">alguém especial entrou na minha vida</p>
-          <p class="intro-line" data-anim="fade">e desde então, cada dia tem sido presente.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section memories" id="memories">
-      <div class="container">
-        <h2 class="section-heading">Nossos Momentos</h2>
-        <div class="timeline">
-          <div class="timeline-rail"></div>
-
-          <div class="memory-card" data-side="left">
-            <div class="memory-dot"></div>
-            <div class="memory-inner">
-              <span class="memory-when">12/05/2025</span>
-              <h3 class="memory-title">Primeira Conversa</h3>
-              <p class="memory-desc">Quando começamos a conversar.</p>
-            </div>
-          </div>
-
-          <div class="memory-card" data-side="right">
-            <div class="memory-dot"></div>
-            <div class="memory-inner">
-              <span class="memory-when">12/06/2025</span>
-              <h3 class="memory-title">Dia dos Namorados</h3>
-              <p class="memory-desc">Nosso primeiro Dia dos Namorados juntos. Celebramos e eu te dei o primeiro anel de compromisso e uma rosa.</p>
-            </div>
-          </div>
-
-          <div class="memory-card" data-side="left">
-            <div class="memory-dot"></div>
-            <div class="memory-inner">
-              <span class="memory-when">21/05/2025</span>
-              <h3 class="memory-title">Começo da Nossa História</h3>
-              <p class="memory-desc">Começo da nossa história, falando sobre o começo do nosso namoro.</p>
-            </div>
-          </div>
-
-          <div class="memory-card" data-side="right">
-            <div class="memory-dot"></div>
-            <div class="memory-inner">
-              <span class="memory-when">27/06/2025</span>
-              <h3 class="memory-title">Seu Aniversário</h3>
-              <p class="memory-desc">Seu aniversário, onde eu pude presenciar e festejar ao seu lado pela primeira vez.</p>
-            </div>
-          </div>
-
-          <div class="memory-card" data-side="left">
-            <div class="memory-dot"></div>
-            <div class="memory-inner">
-              <span class="memory-when">20/09/2025</span>
-              <h3 class="memory-title">Primeira Vez no Shopping</h3>
-              <p class="memory-desc">Primeira vez no shopping, após uma apresentação solo de cada um no Toccata.</p>
-            </div>
-          </div>
-
-          <div class="memory-card" data-side="right">
-            <div class="memory-dot"></div>
-            <div class="memory-inner">
-              <span class="memory-when">21/09/2025</span>
-              <h3 class="memory-title">Summer Beats</h3>
-              <p class="memory-desc">Sua primeira vez em um evento católico, onde assistimos à missa e vimos muitos shows.</p>
-            </div>
-          </div>
-
-          <div class="memory-card" data-side="left">
-            <div class="memory-dot"></div>
-            <div class="memory-inner">
-              <span class="memory-when">02/10/2025</span>
-              <h3 class="memory-title">Aniversário da Carol</h3>
-              <p class="memory-desc">Comemoramos o aniversário da Carol pela primeira vez.</p>
-            </div>
-          </div>
-
-          <div class="memory-card" data-side="right">
-            <div class="memory-dot"></div>
-            <div class="memory-inner">
-              <span class="memory-when">25/12/2025</span>
-              <h3 class="memory-title">Primeiro Natal Juntos</h3>
-              <p class="memory-desc">Nosso primeiro Natal juntos.</p>
-            </div>
-          </div>
-
-          <div class="memory-card" data-side="left">
-            <div class="memory-dot"></div>
-            <div class="memory-inner">
-              <span class="memory-when">24/03/2026</span>
-              <h3 class="memory-title">Meu Aniversário</h3>
-              <p class="memory-desc">Meu aniversário, onde você pode presenciar e festejar ao meu lado pela primeira vez.</p>
-            </div>
-          </div>
-
-          <div class="memory-card" data-side="right">
-            <div class="memory-dot"></div>
-            <div class="memory-inner">
-              <span class="memory-when">21/05/2026</span>
-              <h3 class="memory-title">1 Ano de Namoro</h3>
-              <p class="memory-desc">Celebramos nosso 1º ano de namoro indo ao shopping e enchendo o bucho de hambúrguer e Milkmoo.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section things" id="things">
-      <div class="container">
-        <h2 class="section-heading">O que eu amo em você</h2>
-        <div class="things-grid">
-          <div class="thing-card">
-            <span class="thing-icon">&#9786;</span>
-            <h3>Seu Sorriso</h3>
-            <p>Que ilumina qualquer lugar e faz o mundo parecer mais bonito.</p>
-          </div>
-          <div class="thing-card">
-            <span class="thing-icon">&#9834;</span>
-            <h3>Sua Voz</h3>
-            <p>A melodia que eu quero ouvir todas as manhãs pelo resto da vida.</p>
-          </div>
-          <div class="thing-card">
-            <span class="thing-icon">&#10047;</span>
-            <h3>Sua Força</h3>
-            <p>A maneira como enfrenta tudo com graça e determinação, mesmo passando por tanta coisa.</p>
-          </div>
-          <div class="thing-card">
-            <span class="thing-icon">&#9752;</span>
-            <h3>Sua Gentileza</h3>
-            <p>Os pequenos gestos que mostram o tamanho do seu coração (te amo).</p>
-          </div>
-          <div class="thing-card">
-            <span class="thing-icon">&#9733;</span>
-            <h3>Seu Brilho</h3>
-            <p>A energia contagiante que transforma dias comuns em memoráveis.</p>
-          </div>
-          <div class="thing-card">
-            <span class="thing-icon">&#9829;</span>
-            <h3>Tudo</h3>
-            <p>Cada detalhe, cada imperfeição, cada coisa que faz de você, você.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section counter-section" id="counter">
-      <div class="container">
-        <h2 class="section-heading">Juntos há</h2>
-        <p class="counter-since">desde 21 de maio de 2025</p>
-        <div class="counter-grid">
-          <div class="counter-item">
-            <span class="counter-num" id="timer-days">0</span>
-            <span class="counter-label">Dias</span>
-          </div>
-          <div class="counter-item">
-            <span class="counter-num" id="timer-hours">0</span>
-            <span class="counter-label">Horas</span>
-          </div>
-          <div class="counter-item">
-            <span class="counter-num" id="timer-minutes">0</span>
-            <span class="counter-label">Minutos</span>
-          </div>
-          <div class="counter-item">
-            <span class="counter-num" id="timer-seconds">0</span>
-            <span class="counter-label">Segundos</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section letter-section" id="letter">
-      <div class="container">
-        <h2 class="section-heading">Para Alice</h2>
-        <div class="letter-wrapper">
-          <div class="letter-paper">
-            <div class="letter-rose">&#10086;</div>
-            <div class="letter-body">
-              <p class="letter-para" data-anim="letter">Alice,</p>
-              <p class="letter-para" data-anim="letter">Eu queria dizer através dessa carta que você é simplesmente a pessoa mais incrível e perfeita de todas. Eu amo te amar e te agradeço por ser a pessoa que é. Mesmo que você enxergue muitos defeitos em si mesma, eu os vejo e os valorizo, porque são o que faz você ser você.</p>
-              <p class="letter-para" data-anim="letter">Eu te agradeço por cada momento que passamos juntos desde então. Eu te amo infinitamente: cada abraço, cada beijo, cada encontro, cada lanche comido kkkkk. Espero que sejam apenas os primeiros de muitos, meu amor.</p>
-              <p class="letter-para" data-anim="letter">Tenho certeza de que isso é apenas o começo da nossa história, pois sei que vamos construir ainda mais coisas, sempre juntos. Espero que, através desse singelo presente, tenha conseguido transmitir meus sentimentos. Eu te amo muito, meu amor, e quero te amar cada vez mais.</p>
-              <p class="letter-para letter-sign" data-anim="letter">Com todo o meu amor,<br>Sempre seu.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>Feito com <span class="footer-heart">&hearts;</span> para você, Alice</p>
-        <p class="footer-year">desde 21.05.2025</p>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
-</html>
+<!doctype html>
+
+<html lang="pt-BR">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♥</text></svg>" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>1 Ano com Alice</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div id="hearts-bg" aria-hidden="true"></div>
+
+
+
+    <section class="hero" id="hero">
+
+      <div class="hero-glow"></div>
+
+      <div class="hero-content">
+
+        <p class="hero-pre">Para</p>
+
+        <h1 class="hero-title">
+
+          <span class="title-number">Alice</span>
+
+          <span class="title-text">o</span>
+
+        </h1>
+
+        <p class="hero-with">meu</p>
+
+        <h2 class="hero-name">Amor</h2>
+
+        <div class="hero-heart" id="hero-heart">
+
+          <svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+            <path d="M256 448l-30.2-27.6C97.9 306.7 32 249.4 32 176 32 114.6 80.6 64 140 64c33.5 0 65.9 15.5 86 39.9L256 128l30-24.1C306 79.5 338.5 64 372 64c59.4 0 108 50.6 108 112 0 73.4-65.9 130.7-193.8 244.4L256 448z" fill="currentColor"/>
+
+          </svg>
+
+        </div>
+
+        <p class="hero-date">desde 21 de maio de 2025</p>
+
+      </div>
+
+      <div class="scroll-indicator" id="scroll-indicator">
+
+        <span>Nossa história</span>
+
+        <div class="scroll-line"></div>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="section story-intro" id="story-intro">
+
+      <div class="container">
+
+        <div class="intro-text">
+
+          <p class="intro-line" data-anim="fade">Há aproximadamente um ano,</p>
+
+          <p class="intro-line" data-anim="fade">alguém especial entrou na minha vida</p>
+
+          <p class="intro-line" data-anim="fade">e desde então, cada dia tem sido presente.</p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="section memories" id="memories">
+
+      <div class="container">
+
+        <h2 class="section-heading">Nossos Momentos</h2>
+
+        <div class="timeline">
+
+          <div class="timeline-rail"></div>
+
+
+
+          <div class="memory-card" data-side="left">
+
+            <div class="memory-dot"></div>
+
+            <div class="memory-inner">
+
+              <span class="memory-when">12/05/2025</span>
+
+              <h3 class="memory-title">Primeira Conversa</h3>
+
+              <p class="memory-desc">Quando começamos a conversar.</p>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="memory-card" data-side="right">
+
+            <div class="memory-dot"></div>
+
+            <div class="memory-inner">
+
+              <span class="memory-when">12/06/2025</span>
+
+              <h3 class="memory-title">Dia dos Namorados</h3>
+
+              <p class="memory-desc">Nosso primeiro Dia dos Namorados juntos. Celebramos e eu te dei o primeiro anel de compromisso e uma rosa.</p>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="memory-card" data-side="left">
+
+            <div class="memory-dot"></div>
+
+            <div class="memory-inner">
+
+              <span class="memory-when">21/05/2025</span>
+
+              <h3 class="memory-title">Começo da Nossa História</h3>
+
+              <p class="memory-desc">Começo da nossa história, falando sobre o começo do nosso namoro.</p>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="memory-card" data-side="right">
+
+            <div class="memory-dot"></div>
+
+            <div class="memory-inner">
+
+              <span class="memory-when">27/06/2025</span>
+
+              <h3 class="memory-title">Seu Aniversário</h3>
+
+              <p class="memory-desc">Seu aniversário, onde eu pude presenciar e festejar ao seu lado pela primeira vez.</p>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="memory-card" data-side="left">
+
+            <div class="memory-dot"></div>
+
+            <div class="memory-inner">
+
+              <span class="memory-when">20/09/2025</span>
+
+              <h3 class="memory-title">Primeira Vez no Shopping</h3>
+
+              <p class="memory-desc">Primeira vez no shopping, após uma apresentação solo de cada um no Toccata.</p>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="memory-card" data-side="right">
+
+            <div class="memory-dot"></div>
+
+            <div class="memory-inner">
+
+              <span class="memory-when">21/09/2025</span>
+
+              <h3 class="memory-title">Summer Beats</h3>
+
+              <p class="memory-desc">Sua primeira vez em um evento católico, onde assistimos à missa e vimos muitos shows.</p>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="memory-card" data-side="left">
+
+            <div class="memory-dot"></div>
+
+            <div class="memory-inner">
+
+              <span class="memory-when">02/10/2025</span>
+
+              <h3 class="memory-title">Aniversário da Carol</h3>
+
+              <p class="memory-desc">Comemoramos o aniversário da Carol pela primeira vez.</p>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="memory-card" data-side="right">
+
+            <div class="memory-dot"></div>
+
+            <div class="memory-inner">
+
+              <span class="memory-when">25/12/2025</span>
+
+              <h3 class="memory-title">Primeiro Natal Juntos</h3>
+
+              <p class="memory-desc">Nosso primeiro Natal juntos.</p>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="memory-card" data-side="left">
+
+            <div class="memory-dot"></div>
+
+            <div class="memory-inner">
+
+              <span class="memory-when">24/03/2026</span>
+
+              <h3 class="memory-title">Meu Aniversário</h3>
+
+              <p class="memory-desc">Meu aniversário, onde você pode presenciar e festejar ao meu lado pela primeira vez.</p>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="memory-card" data-side="right">
+
+            <div class="memory-dot"></div>
+
+            <div class="memory-inner">
+
+              <span class="memory-when">21/05/2026</span>
+
+              <h3 class="memory-title">1 Ano de Namoro</h3>
+
+              <p class="memory-desc">Celebramos nosso 1º ano de namoro indo ao shopping e enchendo o bucho de hambúrguer e Milkmoo.</p>
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="section things" id="things">
+
+      <div class="container">
+
+        <h2 class="section-heading">O que eu amo em você</h2>
+
+        <div class="things-grid">
+
+          <div class="thing-card">
+
+            <span class="thing-icon">&#9786;</span>
+
+            <h3>Seu Sorriso</h3>
+
+            <p>Que ilumina qualquer lugar e faz o mundo parecer mais bonito.</p>
+
+          </div>
+
+          <div class="thing-card">
+
+            <span class="thing-icon">&#9834;</span>
+
+            <h3>Sua Voz</h3>
+
+            <p>A melodia que eu quero ouvir todas as manhãs pelo resto da vida.</p>
+
+          </div>
+
+          <div class="thing-card">
+
+            <span class="thing-icon">&#10047;</span>
+
+            <h3>Sua Força</h3>
+
+            <p>A maneira como enfrenta tudo com graça e determinação, mesmo passando por tanta coisa.</p>
+
+          </div>
+
+          <div class="thing-card">
+
+            <span class="thing-icon">&#9752;</span>
+
+            <h3>Sua Gentileza</h3>
+
+            <p>Os pequenos gestos que mostram o tamanho do seu coração (te amo).</p>
+
+          </div>
+
+          <div class="thing-card">
+
+            <span class="thing-icon">&#9733;</span>
+
+            <h3>Seu Brilho</h3>
+
+            <p>A energia contagiante que transforma dias comuns em memoráveis.</p>
+
+          </div>
+
+          <div class="thing-card">
+
+            <span class="thing-icon">&#9829;</span>
+
+            <h3>Tudo</h3>
+
+            <p>Cada detalhe, cada imperfeição, cada coisa que faz de você, você.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="section counter-section" id="counter">
+
+      <div class="container">
+
+        <h2 class="section-heading">Juntos há</h2>
+
+        <p class="counter-since">desde 21 de maio de 2025</p>
+
+        <div class="counter-grid">
+
+          <div class="counter-item">
+
+            <span class="counter-num" id="timer-days">0</span>
+
+            <span class="counter-label">Dias</span>
+
+          </div>
+
+          <div class="counter-item">
+
+            <span class="counter-num" id="timer-hours">0</span>
+
+            <span class="counter-label">Horas</span>
+
+          </div>
+
+          <div class="counter-item">
+
+            <span class="counter-num" id="timer-minutes">0</span>
+
+            <span class="counter-label">Minutos</span>
+
+          </div>
+
+          <div class="counter-item">
+
+            <span class="counter-num" id="timer-seconds">0</span>
+
+            <span class="counter-label">Segundos</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="section letter-section" id="letter">
+
+      <div class="container">
+
+        <h2 class="section-heading">Para Alice</h2>
+
+        <div class="letter-wrapper">
+
+          <div class="letter-paper">
+
+            <div class="letter-rose">&#10086;</div>
+
+            <div class="letter-body">
+
+              <p class="letter-para" data-anim="letter">Alice,</p>
+
+              <p class="letter-para" data-anim="letter">Eu queria dizer através dessa carta que você é simplesmente a pessoa mais incrível e perfeita de todas. Eu amo te amar e te agradeço por ser a pessoa que é. Mesmo que você enxergue muitos defeitos em si mesma, eu os vejo e os valorizo, porque são o que faz você ser você.</p>
+
+              <p class="letter-para" data-anim="letter">Eu te agradeço por cada momento que passamos juntos desde então. Eu te amo infinitamente: cada abraço, cada beijo, cada encontro, cada lanche comido kkkkk. Espero que sejam apenas os primeiros de muitos, meu amor.</p>
+
+              <p class="letter-para" data-anim="letter">Tenho certeza de que isso é apenas o começo da nossa história, pois sei que vamos construir ainda mais coisas, sempre juntos. Espero que, através desse singelo presente, tenha conseguido transmitir meus sentimentos. Eu te amo muito, meu amor, e quero te amar cada vez mais.</p>
+
+              <p class="letter-para letter-sign" data-anim="letter">Com todo o meu amor,<br>Sempre seu.</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <footer class="site-footer">
+
+      <div class="container">
+
+        <p>Feito com <span class="footer-heart">&hearts;</span> para você, Alice</p>
+
+        <p class="footer-year">desde 21.05.2025</p>
+
+      </div>
+
+    </footer>
+
+
+
+    <script src="script.js" defer></script>
+
+  </body>
+
+</html>
+
